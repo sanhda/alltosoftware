@@ -27,27 +27,27 @@
             <p>Sign up to enjoy the feature of ALLTO Products</p>
 
             <label class="label" for="username">Username:</label>
-            <input class="input" type="text" id="username" name="username" th:field="*{username}">
+            <input class="input" type="text" id="username" name="username" th:field="*{username}" required>
             <p th:if="${#fields.hasErrors('username')}" class="text-danger" th:errors="*{username}"></p>
 
             <label  class="label" for="company">Company name:</label>
-            <input class="input" type="text" id="company" name="company" th:field="*{company}">
+            <input class="input" type="text" id="company" name="company" th:field="*{company}" required>
             <p th:if="${#fields.hasErrors('company')}" class="text-danger" th:errors="*{company}"></p>
 
             <label  class="label" for="country">Country:</label>
-            <input class="input" type="text" id="country" name="country" th:field="*{country}">
+            <input class="input" type="text" id="country" name="country" th:field="*{country}" required>
             <p th:if="${#fields.hasErrors('country')}" class="text-danger" th:errors="*{country}"></p>
 
             <label  class="label" for="email">Email:</label>
-            <input class="input" type="email" id="email" name="email" th:field="*{email}">
+            <input class="input" type="email" id="email" name="email" th:field="*{email}" required>
             <p th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></p>
 
             <label  class="label" for="password">Password:</label>
-            <input class="input" type="password" id="password" name="password" th:field="*{password}">
+            <input class="input" type="password" id="password" name="password" th:field="*{password}" required>
             <p th:if="${#fields.hasErrors('password')}" class="text-danger" th:errors="*{password}"></p>
 
             <label  class="label" for="confirmPassword">Confirm password:</label>
-            <input class="input" type="password" id="confirmPassword" name="confirmPassword" th:field="*{confirmPassword}">
+            <input class="input" type="password" id="confirmPassword" name="confirmPassword" th:field="*{confirmPassword}" required>
             <p th:if="${#fields.hasErrors('confirmPassword')}" class="text-danger" th:errors="*{confirmPassword}"></p>
 
             <input class="input" type="submit" value="Sign up">

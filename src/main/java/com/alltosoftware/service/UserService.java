@@ -6,4 +6,6 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 
     public void saveUser(RegistrationDto registrationDto);
+
+    public boolean emailExists(String email);
 }

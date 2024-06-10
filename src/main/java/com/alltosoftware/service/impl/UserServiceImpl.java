@@ -19,6 +19,10 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     private RoleRepository roleRepository;
 
+    public boolean emailExists(String email) {
+        return userRepository.findByEmail(email) != null;
+    }
+
     @Autowired
     public UserServiceImpl(PasswordEncoder passwordEncoder,
                            UserRepository userRepository,

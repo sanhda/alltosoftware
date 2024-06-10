@@ -15,7 +15,7 @@
 .left-side {
   margin-right: auto;
   margin-left: auto;
-  padding: 20px;
+  padding: 10px;
 }
 .left-side .logo {
   width: 200px;
@@ -23,6 +23,7 @@
 }
 .left-side .register-form {
   padding: 32px;
+  padding-left: 80px;
 }
 .left-side .register-form .input {
   font-weight: 400;
@@ -60,10 +61,10 @@
 }
 
 .right-side {
-  background-image: url("../img/register_theme.png"); /* Set the path to your image */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  border: 1px solid #ccc; /* Optional: border for visualization */
+  background-image: url("../img/register_theme.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
   border-radius: 24px;
 }
 

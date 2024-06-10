@@ -1,5 +1,13 @@
 @import "_variables";
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,6 +16,8 @@
   margin-right: auto;
   height: 100%;
   padding: 20px;
+  align-items: center;
+  flex-grow: 1;
 
   h2 {
     font-weight: 700;
@@ -18,7 +28,7 @@
 .left-side {
   margin-right: auto;
   margin-left: auto;
-  padding: 20px;
+  padding: 10px;
 
   .logo {
     width: 200px;
@@ -28,6 +38,7 @@
   .register-form {
 
     padding: 32px;
+    padding-left: 80px;
 
     .input {
       font-weight: 400;
@@ -72,9 +83,9 @@
 }
 
 .right-side {
-  background-image: url('../img/register_theme.png'); /* Set the path to your image */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  border: 1px solid #ccc; /* Optional: border for visualization */
+  background-image: url('../img/register_theme.png');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
   border-radius: 24px;
 }

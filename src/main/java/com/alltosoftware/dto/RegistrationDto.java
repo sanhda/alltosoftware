@@ -2,6 +2,7 @@ package com.alltosoftware.dto;
 
 import com.alltosoftware.validation.annotation.PasswordConstraint;
 import com.alltosoftware.validation.annotation.PasswordMatches;
+import com.alltosoftware.validation.annotation.UniqueEmail;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@PasswordMatches
+@PasswordMatches(message = "Confirm password not match")
 public class RegistrationDto {
     private Long id;
 
@@ -22,6 +23,7 @@ public class RegistrationDto {
 
     @NotBlank(message = "Email is required")
     @Email(message = "Email should be valid")
+    @UniqueEmail(message = "This email is in use")
     private String email;
 
     @NotBlank(message = "Password is required")
